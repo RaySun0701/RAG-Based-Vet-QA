@@ -10,7 +10,7 @@ from llama_index.core.prompts import PromptTemplate
 from llama_index.core.memory import ChatMemoryBuffer
 
 # === Paths ===
-QWEN_MODEL_PATH = "/Users/raysun/Desktop/RAG-Based-Vet-QA/qwen_0.5b"
+QWEN_MODEL_PATH = "/Users/raysun/Desktop/RAG-Based-Vet-QA/qwen_0.5b"       
 BGE_MODEL_PATH = "/Users/raysun/Desktop/RAG-Based-Vet-QA/bge_retriever"
 INDEX_DIR = "/Users/raysun/Desktop/RAG-Based-Vet-QA/vet_local_embedding"
 
@@ -19,7 +19,8 @@ llm = HuggingFaceLLM(
     context_window=2048,
     max_new_tokens=512,
     generate_kwargs={
-        "do_sample": False  # deterministic output
+        "do_sample": False,  # deterministic output
+        "top_p": None        # disable nucleus sampling
     },
     tokenizer_name=QWEN_MODEL_PATH,
     model_name=QWEN_MODEL_PATH,
