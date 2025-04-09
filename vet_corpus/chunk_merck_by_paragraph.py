@@ -3,8 +3,8 @@ import uuid
 import os
 
 # Input and output file paths
-INPUT_FILE = "/Users/raysun/Desktop/RAG-Based-Vet-QA/vet_knowledge/merck_knowledge.jsonl"
-OUTPUT_FILE = "/Users/raysun/Desktop/RAG-Based-Vet-QA/vet_corpus/chunked_merck.jsonl"
+INPUT_FILE = "/Users/raysun/Desktop/RAG-Based-Vet-QA/vet_knowledge/merck_knowledge.jsonl"    # Specify your own directory
+OUTPUT_FILE = "/Users/raysun/Desktop/RAG-Based-Vet-QA/vet_corpus/chunked_merck.jsonl"        # Specify your own directory
 
 # Parameters for chunking
 MAX_PARAGRAPHS = 3
