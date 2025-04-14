@@ -1,0 +1,14 @@
+beautifulsoup4==4.12.3
+tqdm==4.66.2
+requests==2.32.3
+lxml==5.1.0
+
+torch==2.2.2
+transformers==4.40.1
+sentence-transformers==2.6.1
+huggingface_hub==0.23.1
+
+llama-index==0.10.59
+llama-index-core==0.10.59
+llama-index-llms-huggingface==0.2.7
+llama-index-embeddings-huggingface==0.2.3
