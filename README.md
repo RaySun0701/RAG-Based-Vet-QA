@@ -88,6 +88,16 @@ python scripts/step6_vet_QA_chat.py
 
 You can now interact with the system and ask veterinary-related questions.
 
+### Sample Questions to Try
+
+```text
+> My dog vomited this morning. What could be the cause?
+> What are common skin conditions in cats?
+> How should I feed my pet turtle?
+> What vaccines do puppies need?
+> Can reptiles show signs of pain?
+```
+
 ---
 
 ## Directory Structure
@@ -286,16 +296,6 @@ This step launches an interactive RAG-based chatbot that can answer veterinary q
 - **Multi-turn memory**: Maintains conversational history for contextualized follow-up questions
 - **Veterinary prompt**: Custom system prompt styled as a professional vet assistant
 - **Source highlighting**: Displays deduplicated source URLs for transparency
-
-### Sample Questions to Try
-
-```text
-> My dog vomited this morning. What could be the cause?
-> What are common skin conditions in cats?
-> How should I feed my pet turtle?
-> What vaccines do puppies need?
-> Can reptiles show signs of pain?
-```
 
 ###  Note
 - You must download the local models before running this script:
