@@ -70,7 +70,7 @@ This will create:
 - `bge_retriever/` – for the embedding model
 - `qwen_0.5b/` – for the LLM
 
-### 5. (Skip Indexing) — Prebuilt Index Provided
+### 5. Build the Vector Index
 
 If you are using `BAAI/bge-small-en-v1.5` embedding model, you need to build the vector index yourself.
 
