@@ -72,9 +72,9 @@ This will create:
 
 ### 5. (Skip Indexing) — Prebuilt Index Provided
 
-If you are using `BAAI/bge-small-en-v1.5` embedding model, you **do not** need to build the vector index yourself — I provide a precomputed index in `vet_local_embedding/`.
+If you are using `BAAI/bge-small-en-v1.5` embedding model, you need to build the vector index yourself.
 
-If you prefer to rebuild it, please delete the files in `RAG-Based-Vet-QA/vet_local_embedding/` and run the code below:
+Please run the code below:
 
 ```bash
 python scripts/step4_build_vet_index.py
