@@ -18,7 +18,7 @@ INDEX_DIR = os.path.join(PROJECT_ROOT, "vet_local_embedding")
 
 # === Initialize local HuggingFace LLM ===
 llm = HuggingFaceLLM(
-    context_window=2048,
+    context_window=32768,
     max_new_tokens=512,
     generate_kwargs={
         "do_sample": False,  # deterministic output
@@ -52,7 +52,7 @@ system_prompt = (
 )
 
 # === Start chat engine ===
-memory = ChatMemoryBuffer.from_defaults()
+memory = ChatMemoryBuffer.from_defaults(token_limit=2048)
 chat_engine = index.as_chat_engine(
     chat_mode="context",
     system_prompt=system_prompt,
