@@ -27,7 +27,7 @@ RAG-Based-Vet-QA/
 │   ├── step1_vet_merck_scraper.py           # Crawl Merck Veterinary Manual
 │   ├── step2_chunk_merck_by_paragraph.py    # Split content into paragraphs
 │   ├── step3_download_bge_retriever.py      # Download BGE model
-│   ├── step4_build_vet_index.py             # Build FAISS index (optional)
+│   ├── step4_build_vet_index.py             # Build FAISS index 
 │   ├── step5_download_qwen_model.py         # Download Qwen model
 │   └── step6_vet_QA_chat.py                 # Run QA interface
 ├── vet_corpus/
