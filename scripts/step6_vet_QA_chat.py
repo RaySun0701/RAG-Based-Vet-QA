@@ -57,7 +57,7 @@ chat_engine = index.as_chat_engine(
     chat_mode="context",
     system_prompt=system_prompt,
     memory=memory,  # Use memory buffer
-    similarity_top_k=8
+    similarity_top_k=5
 )
 
 # === Interactive chat loop ===
