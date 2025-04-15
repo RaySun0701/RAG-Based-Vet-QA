@@ -79,6 +79,7 @@ Please run the code below:
 ```bash
 python scripts/step4_build_vet_index.py
 ```
+This will take a few minutes.
 
 ### 6. Run the QA System
 
