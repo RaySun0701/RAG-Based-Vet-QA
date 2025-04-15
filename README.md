@@ -17,6 +17,29 @@ You can run the QA system on your local machine after downloading the models to 
 **The model used in this pipeline is replaceable.** I use a Macbook with M2 chip. It works well on my machine. If you have better hardware setting, you can definately use models with larger parameter size.  
 All input/output paths are handled relative to the project root. No need to change any paths manually.
 
+## Directory Structure
+
+```
+RAG-Based-Vet-QA/
+├── bge_retriever/                    # Local BGE embedding model (download)
+├── qwen_0.5b/                        # Local Qwen LLM (download)
+├── scripts/                          # All processing scripts
+│   ├── step1_vet_merck_scraper.py           # Crawl Merck Veterinary Manual
+│   ├── step2_chunk_merck_by_paragraph.py    # Split content into paragraphs
+│   ├── step3_download_bge_retriever.py      # Download BGE model
+│   ├── step4_build_vet_index.py             # Build FAISS index (optional)
+│   ├── step5_download_qwen_model.py         # Download Qwen model
+│   └── step6_vet_QA_chat.py                 # Run QA interface
+├── vet_corpus/
+│   └── chunked_merck.jsonl           # Paragraph-level content
+├── vet_knowledge/
+│   ├── merck_knowledge.jsonl         # Raw crawled data
+│   └── visited_urls.json             # Visited URL cache
+├── vet_local_embedding/              # Prebuilt FAISS index
+├── requirements.txt
+└── README.md
+```
+
 ## Environment Setup
 
 To set up and run this project locally, follow the steps below.
@@ -203,31 +226,6 @@ Sources:
     https://www.merckvetmanual.com/dog-owners/digestive-disorders-of-dogs/disorders-caused-by-protozoa-in-the-digestive-system-of-dogs
 [5] Infectious Diseases of Ratites
     https://www.merckvetmanual.com/exotic-and-laboratory-animals/ratites/infectious-diseases-of-ratites
-```
-
----
-
-## Directory Structure
-
-```
-RAG-Based-Vet-QA/
-├── bge_retriever/                    # Local BGE embedding model (download)
-├── qwen_0.5b/                        # Local Qwen LLM (download)
-├── scripts/                          # All processing scripts
-│   ├── step1_vet_merck_scraper.py           # Crawl Merck Veterinary Manual
-│   ├── step2_chunk_merck_by_paragraph.py    # Split content into paragraphs
-│   ├── step3_download_bge_retriever.py      # Download BGE model
-│   ├── step4_build_vet_index.py             # Build FAISS index (optional)
-│   ├── step5_download_qwen_model.py         # Download Qwen model
-│   └── step6_vet_QA_chat.py                 # Run QA interface
-├── vet_corpus/
-│   └── chunked_merck.jsonl           # Paragraph-level content
-├── vet_knowledge/
-│   ├── merck_knowledge.jsonl         # Raw crawled data
-│   └── visited_urls.json             # Visited URL cache
-├── vet_local_embedding/              # Prebuilt FAISS index
-├── requirements.txt
-└── README.md
 ```
 
 ------
