@@ -52,7 +52,7 @@ system_prompt = (
 )
 
 # === Start chat engine ===
-memory = ChatMemoryBuffer.from_defaults(token_limit=2048)
+memory = ChatMemoryBuffer.from_defaults(token_limit=30000)
 chat_engine = index.as_chat_engine(
     chat_mode="context",
     system_prompt=system_prompt,
