@@ -99,6 +99,112 @@ You can now interact with the system and ask veterinary-related questions.
 > Can reptiles show signs of pain?
 ```
 
+### Example
+
+This is what I got by running this QA system
+
+```text
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+Loading vector index...
+
+Vet QA System Ready. Type your question (or 'exit' to quit).
+
+> My dog vomited this morning. What could be the cause?
+
+Answer:
+ Based on the information provided, there are several potential causes for vomiting in your dog:
+
+1. **Digestive System Disease**: This could be due to conditions like gastric ulcers, inflammatory bowel disease, or even cancer affecting the stomach lining. These conditions can lead to vomiting as a symptom.
+
+2. **Kidney or Liver Failure**: Conditions like hepatic encephalopathy or renal failure can result in vomiting as a sign of organ dysfunction.
+
+3. **Pancreatitis**: Inflammation of the pancreas can cause vomiting as part of its symptoms.
+
+4. **Nervous System Disorders**: Conditions like hyperthyroidism or hyperparathyroidism can affect the gastrointestinal tract leading to vomiting.
+
+5. **Ingestion of Irritating Substances or Poisons**: Your dog might have consumed something that irritated their stomach or was toxic to them.
+
+6. **Infections**: Viral or bacterial infections can cause vomiting as a symptom.
+
+7. **Parasites**: Sometimes, parasitic infestations can lead to vomiting as a symptom.
+
+8. **Poisoning**: Certain poisons can cause vomiting as a reaction.
+
+Given the variety of potential causes, it would be best to consult with your veterinarian who will perform a thorough examination, possibly including blood work, urinalysis, and imaging studies if necessary, to determine the exact cause of your dog's vomiting. They can then recommend appropriate treatment options tailored specifically to your dog's needs.
+
+Sources:
+[1] Vomiting in Dogs
+    https://www.merckvetmanual.com/dog-owners/digestive-disorders-of-dogs/vomiting-in-dogs
+[2] Disorders of the Stomach and Intestines in Dogs
+    https://www.merckvetmanual.com/dog-owners/digestive-disorders-of-dogs/disorders-of-the-stomach-and-intestines-in-dogs
+[3] Gastritis in Small Animals
+    https://www.merckvetmanual.com/digestive-system/diseases-of-the-stomach-in-small-animals/gastritis-in-small-animals
+[4] Food Hazards
+    https://www.merckvetmanual.com/special-pet-topics/poisoning/food-hazards
+
+> Should I give my dog some medcine first? If yes, what medcine should I give him?
+
+Answer:
+ It's important to note that giving medication to pets, especially dogs, is not typically recommended unless instructed by a veterinarian. The reason is that pets do not have the ability to process certain medications properly, and they can overdose or become allergic to drugs. Additionally, pets are more likely to show signs of illness or discomfort if they are not given proper care and attention.
+
+However, if your veterinarian prescribes medication for your dog, here are some general guidelines on administering it safely:
+
+1. **Consult Your Vet First**: Before giving medication to your dog, make sure to discuss it with your veterinarian. They can advise you on the right dosage, timing, and method of administration.
+
+2. **Use Appropriate Equipment**: Ensure that the equipment used to administer the medication is clean and sterile. Avoid using items that could contaminate the medication.
+
+3. **Follow Instructions Carefully**: Be sure to follow the instructions provided by your veterinarian carefully. Some medications require specific dosages, while others can be administered orally, intravenously, or through a tube inserted into the nose.
+
+4. **Monitor Your Dog**: Keep an eye on your dog during the administration period. Pay close attention to any unusual behavior or changes in their condition.
+
+5. **Avoid Overdosing**: Do not give too much medication. Even small amounts can be harmful if ingested.
+
+Remember, the goal is to ensure your dog receives the correct treatment and avoids unnecessary risks. Always seek advice from a qualified veterinarian before making any decisions about your pet's health.
+
+Sources:
+[1] Giving Medication to Pet Birds
+    https://www.merckvetmanual.com/bird-owners/routine-care-and-breeding-of-birds/giving-medication-to-pet-birds
+[2] Disorders of the Stomach and Intestines in Dogs
+    https://www.merckvetmanual.com/dog-owners/digestive-disorders-of-dogs/disorders-of-the-stomach-and-intestines-in-dogs
+[3] Food Hazards
+    https://www.merckvetmanual.com/special-pet-topics/poisoning/food-hazards
+[4] Urolithiasis in Small Animals
+    https://www.merckvetmanual.com/urinary-system/noninfectious-diseases-of-the-urinary-system-in-small-animals/urolithiasis-in-small-animals
+
+> If it's because of Parasites, what medcine should I give to my dog? 
+
+Answer:
+ If your dog has been vomiting due to parasites, it's crucial to address the underlying issue rather than treating the symptoms. Here are some steps you can consider:
+
+1. **Consult Your Veterinarian**: It's important to get a diagnosis from your veterinarian. They can identify the type of parasite causing the vomiting and recommend the appropriate treatment.
+
+2. **Antiparasitic Medication**: Depending on the nature of the parasite, your veterinarian may prescribe either anthelmintics (anti-parasitic drugs) or dewormers (anti-parasitic drugs).
+
+   - **Anthrimerics** (antiparasitic drugs): These are commonly used to treat various types of parasites, including roundworms, hookworms, and whipworms.
+   
+   - **Dewormers**: For adult parasites residing in the small intestine, dewormers like pyrantel and milbemycin oxime/lufenuron are effective. These drugs target the adult stage of the parasite and are generally safe for use in dogs.
+
+3. **Preventative Measures**: Since the parasites are already present in your dog, preventative measures are less critical compared to treating the current symptoms. However, regular check-ups and monitoring of your dog's health are still important.
+
+4. **Hydration**: Make sure your dog stays hydrated. Dehydration caused by vomiting can lead to severe complications.
+
+5. **Nutritional Support**: If your dog is vomiting, it might be due to dehydration or malnutrition. Consult your veterinarian to provide nutritional support.
+
+Always follow the specific instructions provided by your veterinarian regarding the type of medication needed and how to administer it correctly. Over-the-counter medications for parasites are not always safe or effective, and they can interact with other medications your dog is taking.
+
+Sources:
+[1] Gastrointestinal Parasites of Dogs
+    https://www.merckvetmanual.com/dog-owners/digestive-disorders-of-dogs/gastrointestinal-parasites-of-dogs
+[2] Roundworms in Small Animals
+    https://www.merckvetmanual.com/digestive-system/gastrointestinal-parasites-of-small-animals/roundworms-in-small-animals
+[3] Routine Health Care of Dogs
+    https://www.merckvetmanual.com/dog-owners/routine-care-and-breeding-of-dogs/routine-health-care-of-dogs
+[4] Disorders Caused by Protozoa in the Digestive System of Dogs
+    https://www.merckvetmanual.com/dog-owners/digestive-disorders-of-dogs/disorders-caused-by-protozoa-in-the-digestive-system-of-dogs
+[5] Infectious Diseases of Ratites
+    https://www.merckvetmanual.com/exotic-and-laboratory-animals/ratites/infectious-diseases-of-ratites
+```
+
 ---
 
 ## Directory Structure
