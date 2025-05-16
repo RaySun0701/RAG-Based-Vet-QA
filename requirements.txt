@@ -1,14 +1,35 @@
-beautifulsoup4==4.12.3
-tqdm==4.66.2
-requests==2.32.3
-lxml==5.1.0
+# Core dependencies
+numpy>=1.26.4
+pandas>=2.2.3
+scikit-learn>=1.6.1
+tqdm>=4.66.2
+requests>=2.32.3
 
-torch==2.2.2
-transformers==4.40.1
-sentence-transformers==2.6.1
-huggingface_hub==0.23.1
+# UI and visualization
+textual>=0.53.1
+rich>=13.7.0
 
-llama-index==0.10.59
-llama-index-core==0.10.59
-llama-index-llms-huggingface==0.2.7
-llama-index-embeddings-huggingface==0.2.3
+# Web scraping and parsing
+beautifulsoup4>=4.12.3
+lxml>=5.1.0
+
+# Machine learning and AI
+torch>=2.2.2
+transformers>=4.40.1
+sentence-transformers>=2.6.1
+huggingface_hub>=0.23.1
+openai>=1.78.1
+mlx>=0.25.2
+
+# RAG systems
+llama-index>=0.10.59
+llama-index-core>=0.10.59
+llama-index-llms-huggingface>=0.2.7
+llama-index-embeddings-huggingface>=0.2.3
+faiss-cpu>=1.7.4
+
+# LM Studio integration
+httpx>=0.28.1
+
+# File handling
+pypdf>=4.3.1

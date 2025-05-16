@@ -1,0 +1,90 @@
+
+/* Main layout */
+#app-grid {
+    layout: grid;
+    grid-size: 2;
+    grid-columns: 1fr 3fr;
+    height: 100%;
+}
+
+#left-panel {
+    width: 100%;
+    height: 100%;
+    padding: 1;
+    border: solid green;
+}
+
+#right-panel {
+    width: 100%;
+    height: 100%;
+    padding: 1;
+    border: solid blue;
+}
+
+#models-header {
+    dock: top;
+    text-align: center;
+    background: $accent;
+    color: $text;
+    padding: 1;
+    margin-bottom: 1;
+}
+
+#model-selector {
+    margin-bottom: 1;
+}
+
+#system-info-header {
+    text-align: center;
+    background: $accent-darken-1;
+    color: $text;
+    padding: 1;
+    margin-top: 1;
+    margin-bottom: 1;
+}
+
+#build-index-btn, #clear-chat-btn {
+    margin-top: 1;
+    margin-bottom: 1;
+}
+
+/* Chat log */
+#chat-log {
+    height: 1fr;
+    border: solid $accent-darken-2;
+    padding: 1;
+    overflow-y: scroll;
+}
+
+/* Input area */
+#input-container {
+    height: auto;
+    margin-top: 1;
+    layout: horizontal;
+}
+
+#query-input {
+    width: 1fr;
+    margin-right: 1;
+}
+
+/* Utilities */
+#progress-label {
+    color: $success;
+    text-align: center;
+    margin-top: 1;
+}
+
+#progress-bar {
+    color: $success;
+    text-align: center;
+}
+
+/* Buttons */
+Button {
+    margin: 1 0;
+}
+
+Button:hover {
+    background: $accent;
+}
