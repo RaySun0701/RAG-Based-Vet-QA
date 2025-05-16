@@ -22,3 +22,10 @@ gzip-reader>=0.1.0
 python-dateutil>=2.8.0
 uuid>=1.30
 pathlib>=1.0.0
+
+# Zależności dla interfejsu CLI/TUI
+rich>=14.0.0
+textual>=3.2.0
+mlx-lm>=0.0.1
+lmstudio>=0.0.1
+
