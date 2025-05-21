@@ -1,0 +1,77 @@
+[build-system]
+name = "setuptools"
+version = "69.0.2"
+description-file = "README.md"
+
+[project]
+name = "lbrxchat"
+version = "0.1.0"
+description = "LIBRAXIS Chat - advanced TUI-based RAG system powered by MLX and LM Studio"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [
+    {name = "LIBRAXIS Team", email = "contact@libraxis.io"}
+]
+maintainers = [
+    {name = "LIBRAXIS Team", email = "contact@libraxis.io"}
+]
+keywords = ["ai", "chatbot", "rag", "mlx", "lm-studio", "tui"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+dependencies = [
+    "textual>=0.53.1",
+    "numpy>=1.26.4",
+    "scikit-learn>=1.6.1",
+    "rich>=13.7.0",
+    "lmstudio>=1.3.0",
+    "requests>=2.32.3",
+    "mlx>=0.25.2",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.4.0",
+    "black>=23.7.0",
+    "isort>=5.12.0",
+    "mypy>=1.7.0",
+    "ruff>=0.1.11",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/libraxis/lbrxchat"
+"Bug Tracker" = "https://github.com/libraxis/lbrxchat/issues"
+"Documentation" = "https://github.com/libraxis/lbrxchat/wiki"
+"Source Code" = "https://github.com/libraxis/lbrxchat"
+
+[tool.setuptools]
+packages = ["lbrxchat"]
+
+[tool.black]
+line-length = 100
+target-version = ["py310", "py311", "py312"]
+
+[tool.isort]
+profile = "black"
+line_length = 100
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+select = ["E", "F", "B", "I"]
+ignore = []
+
+[tool.mypy]
+python_version = "3.10"
+warn_return_any = true
+warn_unused_configs = true
+disallow_untyped_defs = true
+disallow_incomplete_defs = true 
